@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avengers.ttf">
+            <string>AvengeanceHeroicAvengerNormal</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adatia_Shayn_MatchingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lC0-al-eEY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="ivJ-cc-6tm">
+                                <rect key="frame" x="44" y="-32" width="327" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zp-Jv-R2h">
+                                <rect key="frame" x="87" y="376" width="239" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Singleplayer"/>
+                                <connections>
+                                    <segue destination="tlG-nP-Z4M" kind="show" id="ErK-6Y-GuW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38f-kU-oDr">
+                                <rect key="frame" x="87" y="484" width="240" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Multiplayer"/>
+                                <connections>
+                                    <segue destination="Frg-pq-KoE" kind="show" id="evm-Zr-yGC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0b0-gi-byw">
+                                <rect key="frame" x="87" y="594" width="239" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="TimeTrial"/>
+                                <connections>
+                                    <segue destination="Z2V-vh-Xhl" kind="show" id="sz5-q5-Swm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Subtitle2" translatesAutoresizingMaskIntoConstraints="NO" id="fCe-fY-uwd">
+                                <rect key="frame" x="47" y="92" width="317" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO3-Ez-gmF">
+                                <rect key="frame" x="219" y="696" width="180" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Leaderboard"/>
+                                <connections>
+                                    <segue destination="4GP-rB-mgK" kind="show" id="bFG-ri-Sok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A15-Ki-Vrv">
+                                <rect key="frame" x="20" y="696" width="169" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="HowToPlay"/>
+                                <connections>
+                                    <segue destination="zxH-xV-6Hc" kind="show" id="aCw-Xw-bxI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SYB-hG-oCE"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="134.5108695652174"/>
+        </scene>
+        <!--Singleplayer View Controller-->
+        <scene sceneID="d5r-Kd-QEM">
+            <objects>
+                <viewController id="tlG-nP-Z4M" customClass="SingleplayerViewController" customModule="Adatia_Shayn_MatchingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yAo-E5-YVN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="8In-GC-Qwl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="SBs-fh-IfG">
+                                <rect key="frame" x="26" y="152" width="363" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Score" translatesAutoresizingMaskIntoConstraints="NO" id="F86-Bh-9Uj">
+                                <rect key="frame" x="26" y="72" width="95" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cq0-qX-Wtk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEe-kU-kkX">
+                                        <rect key="frame" x="28" y="15" width="40" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.94117647058823528" green="0.90196078431372551" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hoU-3l-gbn" kind="unwind" unwindAction="unwindToMainMenu:" id="Jx3-1s-G0c"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Golden Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-qQ-ij2">
+                                        <rect key="frame" x="8" y="17" width="26" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16216167807579041" green="0.083705015480518341" blue="0.2156340479850769" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3H-WI-who">
+                                <rect key="frame" x="26" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="RGk-BS-2x2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am9-9W-xrV">
+                                <rect key="frame" x="118" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="8J7-Xz-Ofv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-eI-Zf8">
+                                <rect key="frame" x="209" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="GM4-cB-jl8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c2-AE-WGm">
+                                <rect key="frame" x="299" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="1xt-oo-zH6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TE-cz-pcx">
+                                <rect key="frame" x="26" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="id6-Bz-OsO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANK-EQ-wTd">
+                                <rect key="frame" x="118" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="K54-A5-QxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzl-fJ-U2l">
+                                <rect key="frame" x="209" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="JVE-c2-0wz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBy-DU-rGC">
+                                <rect key="frame" x="26" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="v8k-kf-0WM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZc-gI-lZd">
+                                <rect key="frame" x="118" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="tC5-Nj-Uqv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-uP-N7E">
+                                <rect key="frame" x="209" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="9qc-EA-sfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F5-LT-RMe">
+                                <rect key="frame" x="299" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="8YZ-F7-i2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4D-jt-Syh">
+                                <rect key="frame" x="26" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="3J5-HU-oZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJq-7P-OyT">
+                                <rect key="frame" x="118" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="tAW-5z-sh8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIB-gy-e27">
+                                <rect key="frame" x="209" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="Ydc-iF-i6a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4Y-4a-WbT">
+                                <rect key="frame" x="299" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="yiZ-q2-UZn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-d5-Wkz">
+                                <rect key="frame" x="299" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="sAJ-W4-I9M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-4P-myZ">
+                                <rect key="frame" x="155" y="586" width="104" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="Y8t-Ts-8Bb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8m-ax-8Ba">
+                                <rect key="frame" x="129" y="77" width="79" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="44"/>
+                                <color key="textColor" red="0.66482585668563843" green="0.51938462257385254" blue="0.32169598340988159" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmY-pa-KBz">
+                                <rect key="frame" x="247" y="639" width="142" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="GiveUp"/>
+                                <connections>
+                                    <action selector="giveUp:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="Yex-fz-9ii"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsl-EG-Kuy">
+                                <rect key="frame" x="10" y="639" width="182" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewGame"/>
+                                <connections>
+                                    <action selector="newGame:" destination="tlG-nP-Z4M" eventType="touchUpInside" id="txV-cm-g2n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="43Y-F3-2Oi"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="giveUpButton" destination="SmY-pa-KBz" id="oEQ-HB-lsB"/>
+                        <outlet property="newGameButton" destination="zsl-EG-Kuy" id="RCn-zt-ube"/>
+                        <outlet property="scoreLabel" destination="Z8m-ax-8Ba" id="0tw-ac-mmX"/>
+                        <outlet property="startButton" destination="ocS-4P-myZ" id="UwX-Qc-2Eg"/>
+                        <outletCollection property="positions" destination="I3H-WI-who" collectionClass="NSMutableArray" id="Q97-1q-49a"/>
+                        <outletCollection property="positions" destination="Am9-9W-xrV" collectionClass="NSMutableArray" id="wOk-IA-FPE"/>
+                        <outletCollection property="positions" destination="1CY-eI-Zf8" collectionClass="NSMutableArray" id="G6d-4b-aI2"/>
+                        <outletCollection property="positions" destination="1c2-AE-WGm" collectionClass="NSMutableArray" id="DVa-wG-f2u"/>
+                        <outletCollection property="positions" destination="9TE-cz-pcx" collectionClass="NSMutableArray" id="Cen-Lc-Dxa"/>
+                        <outletCollection property="positions" destination="ANK-EQ-wTd" collectionClass="NSMutableArray" id="jmm-Wh-zdP"/>
+                        <outletCollection property="positions" destination="Zzl-fJ-U2l" collectionClass="NSMutableArray" id="0YE-yy-bCb"/>
+                        <outletCollection property="positions" destination="Hfb-d5-Wkz" collectionClass="NSMutableArray" id="l90-q7-EvS"/>
+                        <outletCollection property="positions" destination="eBy-DU-rGC" collectionClass="NSMutableArray" id="guO-xK-BRc"/>
+                        <outletCollection property="positions" destination="TZc-gI-lZd" collectionClass="NSMutableArray" id="z2E-ws-Gee"/>
+                        <outletCollection property="positions" destination="0yp-uP-N7E" collectionClass="NSMutableArray" id="q0K-su-noL"/>
+                        <outletCollection property="positions" destination="8F5-LT-RMe" collectionClass="NSMutableArray" id="1Tu-iN-tcW"/>
+                        <outletCollection property="positions" destination="L4D-jt-Syh" collectionClass="NSMutableArray" id="zs2-dm-n1o"/>
+                        <outletCollection property="positions" destination="fJq-7P-OyT" collectionClass="NSMutableArray" id="TdX-Ff-ydf"/>
+                        <outletCollection property="positions" destination="DIB-gy-e27" collectionClass="NSMutableArray" id="0XL-gv-LjG"/>
+                        <outletCollection property="positions" destination="S4Y-4a-WbT" collectionClass="NSMutableArray" id="BHP-ON-oYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yT-Sx-khT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hoU-3l-gbn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1753.6231884057972" y="134.5108695652174"/>
+        </scene>
+        <!--Multiplayer View Controller-->
+        <scene sceneID="a9U-Uy-gIk">
+            <objects>
+                <viewController id="Frg-pq-KoE" customClass="MultiplayerViewController" customModule="Adatia_Shayn_MatchingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="53m-bV-kaq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="MG2-rq-HQe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="bnM-WV-adv">
+                                <rect key="frame" x="26" y="152" width="363" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-XZ-c22">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-a9-6aO">
+                                        <rect key="frame" x="28" y="15" width="40" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.94117647059999998" green="0.90196078430000004" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="kgt-Pq-a1P" kind="unwind" unwindAction="unwindToMainMenu:" id="bUG-in-iud"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Golden Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="hTc-6w-vJH">
+                                        <rect key="frame" x="8" y="17" width="26" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16216167810000001" green="0.083705015480000006" blue="0.21563404799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APK-d5-ida">
+                                <rect key="frame" x="26" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="ntu-Mu-jgr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jj-O4-xkj">
+                                <rect key="frame" x="118" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="y1Q-wS-DsQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-fo-Wjg">
+                                <rect key="frame" x="209" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="5I7-tI-pIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ca-vu-sx7">
+                                <rect key="frame" x="299" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="awa-tf-2Ky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFz-L6-AAv">
+                                <rect key="frame" x="26" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="wV4-XR-1SY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ7-pW-dQk">
+                                <rect key="frame" x="118" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="RC5-Gl-dru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exU-H3-zGP">
+                                <rect key="frame" x="209" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="A2d-DO-8Kh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYJ-Yj-8gA">
+                                <rect key="frame" x="26" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="tz2-rc-axM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-tL-pLF">
+                                <rect key="frame" x="118" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="sla-nk-T2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UA-8k-KOr">
+                                <rect key="frame" x="209" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="Yel-f4-PiI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUC-QP-bPZ">
+                                <rect key="frame" x="299" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="U1b-6V-YyN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qV-US-EXL">
+                                <rect key="frame" x="26" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="Jyz-1V-h2d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5L-3c-uY4">
+                                <rect key="frame" x="118" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="rX7-Lu-MEG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7a-dr-fkN">
+                                <rect key="frame" x="209" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="McH-xC-0F2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-jx-QE2">
+                                <rect key="frame" x="299" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="bXr-GC-1g8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-ZR-fsV">
+                                <rect key="frame" x="299" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Frg-pq-KoE" eventType="touchUpInside" id="gE9-J1-O2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLV-BN-bxy">
+                                <rect key="frame" x="155" y="586" width="104" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="Frg-pq-KoE" eventType="touchUpInside" id="eDQ-a3-kMy"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7w-bh-P8h">
+                                <rect key="frame" x="247" y="639" width="142" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="GiveUp"/>
+                                <connections>
+                                    <action selector="giveUp:" destination="Frg-pq-KoE" eventType="touchUpInside" id="srd-PT-zy1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmr-pT-viT">
+                                <rect key="frame" x="10" y="639" width="182" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewGame"/>
+                                <connections>
+                                    <action selector="newGame:" destination="Frg-pq-KoE" eventType="touchUpInside" id="nCb-qa-5rz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thB-D6-sr1">
+                                <rect key="frame" x="26" y="72" width="111" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="35"/>
+                                <color key="textColor" red="0.66482585670000005" green="0.51938462259999996" blue="0.3216959834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhZ-QV-Hzb">
+                                <rect key="frame" x="211" y="84" width="56" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="35"/>
+                                <color key="textColor" red="0.66666666669999997" green="0.51764705879999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gds-oz-XJ2">
+                                <rect key="frame" x="283" y="72" width="111" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="35"/>
+                                <color key="textColor" red="0.66482585670000005" green="0.51938462259999996" blue="0.3216959834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9g-Az-VAz">
+                                <rect key="frame" x="26" y="519" width="362" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="20"/>
+                                <color key="textColor" red="0.66482585670000005" green="0.51938462259999996" blue="0.3216959834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r39-55-KWi">
+                                <rect key="frame" x="145" y="84" width="47" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="35"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.51764705882352935" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mDv-ga-GP1"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="giveUpButton" destination="M7w-bh-P8h" id="uq7-bb-kei"/>
+                        <outlet property="newGameButton" destination="Kmr-pT-viT" id="5Ta-S8-M0Y"/>
+                        <outlet property="player1Label" destination="thB-D6-sr1" id="M6g-8J-bFi"/>
+                        <outlet property="player2Label" destination="gds-oz-XJ2" id="v20-Mb-ifG"/>
+                        <outlet property="scoreLabel" destination="r39-55-KWi" id="BPL-ZG-vWa"/>
+                        <outlet property="scoreLabel2" destination="GhZ-QV-Hzb" id="E5Z-cx-sTT"/>
+                        <outlet property="startButton" destination="cLV-BN-bxy" id="88l-3y-deg"/>
+                        <outlet property="turnIndicator" destination="Q9g-Az-VAz" id="ZMl-9c-7Cf"/>
+                        <outletCollection property="positions" destination="APK-d5-ida" collectionClass="NSMutableArray" id="vkC-vt-MLw"/>
+                        <outletCollection property="positions" destination="3Jj-O4-xkj" collectionClass="NSMutableArray" id="mNa-VZ-Pe3"/>
+                        <outletCollection property="positions" destination="T1C-fo-Wjg" collectionClass="NSMutableArray" id="mrG-mt-s26"/>
+                        <outletCollection property="positions" destination="3Ca-vu-sx7" collectionClass="NSMutableArray" id="Zif-h0-czk"/>
+                        <outletCollection property="positions" destination="vFz-L6-AAv" collectionClass="NSMutableArray" id="yjX-Cm-4jX"/>
+                        <outletCollection property="positions" destination="CZ7-pW-dQk" collectionClass="NSMutableArray" id="meh-H3-H98"/>
+                        <outletCollection property="positions" destination="exU-H3-zGP" collectionClass="NSMutableArray" id="fbU-we-UwZ"/>
+                        <outletCollection property="positions" destination="wSE-ZR-fsV" collectionClass="NSMutableArray" id="M6v-54-Wlg"/>
+                        <outletCollection property="positions" destination="jYJ-Yj-8gA" collectionClass="NSMutableArray" id="4RW-16-6oT"/>
+                        <outletCollection property="positions" destination="jqm-tL-pLF" collectionClass="NSMutableArray" id="R3U-ye-Ib6"/>
+                        <outletCollection property="positions" destination="4UA-8k-KOr" collectionClass="NSMutableArray" id="gB1-oq-38E"/>
+                        <outletCollection property="positions" destination="JUC-QP-bPZ" collectionClass="NSMutableArray" id="aCf-kE-Iwn"/>
+                        <outletCollection property="positions" destination="7qV-US-EXL" collectionClass="NSMutableArray" id="aHu-8z-osP"/>
+                        <outletCollection property="positions" destination="k5L-3c-uY4" collectionClass="NSMutableArray" id="DKY-aN-P9X"/>
+                        <outletCollection property="positions" destination="z7a-dr-fkN" collectionClass="NSMutableArray" id="VXg-3D-mC4"/>
+                        <outletCollection property="positions" destination="Gst-jx-QE2" collectionClass="NSMutableArray" id="IEf-d1-G4o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyc-aD-5RG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kgt-Pq-a1P" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2439.130434782609" y="134.5108695652174"/>
+        </scene>
+        <!--Time Trial View Controller-->
+        <scene sceneID="ScU-ZF-ojg">
+            <objects>
+                <viewController id="Z2V-vh-Xhl" customClass="TimeTrialViewController" customModule="Adatia_Shayn_MatchingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojR-rs-fXr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="kF3-aF-MKm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="tfS-FL-XG8">
+                                <rect key="frame" x="26" y="152" width="363" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Score" translatesAutoresizingMaskIntoConstraints="NO" id="iiy-sh-clZ">
+                                <rect key="frame" x="26" y="72" width="95" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3MZ-iZ-NlS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJP-E9-v9x">
+                                        <rect key="frame" x="28" y="15" width="40" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.94117647059999998" green="0.90196078430000004" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="rX8-89-EhJ" kind="unwind" unwindAction="unwindToMainMenu:" id="ZJZ-Zf-6LJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Golden Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="HXp-cV-usD">
+                                        <rect key="frame" x="8" y="17" width="26" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16216167810000001" green="0.083705015480000006" blue="0.21563404799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9i-E7-9q0">
+                                <rect key="frame" x="26" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="Izh-6C-FmV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r6-a8-BSM">
+                                <rect key="frame" x="118" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="Hsb-Fr-nju"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ry-hR-pXA">
+                                <rect key="frame" x="209" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="t7g-gt-qXo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK8-uL-JJt">
+                                <rect key="frame" x="299" y="152" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="y4V-Vy-O47"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw5-ad-K3a">
+                                <rect key="frame" x="26" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="XdH-E4-LMw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAb-jw-Zhb">
+                                <rect key="frame" x="118" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="AI3-tt-Bvp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0U-31-RZn">
+                                <rect key="frame" x="209" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="1DI-Xe-AwZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8I-Kh-Xcb">
+                                <rect key="frame" x="26" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="aqV-TG-sy7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctF-7k-yUw">
+                                <rect key="frame" x="118" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="dol-gW-eLD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3B-FU-eSr">
+                                <rect key="frame" x="209" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="I68-E8-O1N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuC-0R-sh7">
+                                <rect key="frame" x="299" y="332" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="hHS-0a-01V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRA-C5-Thk">
+                                <rect key="frame" x="26" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="Yyr-hd-7HF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjV-er-ZeQ">
+                                <rect key="frame" x="118" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="lUe-Xr-rV8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-QI-pLh">
+                                <rect key="frame" x="209" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="sBr-tm-qvc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI8-Ea-etD">
+                                <rect key="frame" x="299" y="421" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="Cvg-uI-HcO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvy-eQ-FHH">
+                                <rect key="frame" x="299" y="243" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="avengerslogo"/>
+                                <connections>
+                                    <action selector="position1Button:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="HPw-Dp-sR3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMn-ZQ-pQV">
+                                <rect key="frame" x="155" y="586" width="104" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="L6P-pj-SCs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysQ-B7-Jbd">
+                                <rect key="frame" x="129" y="77" width="79" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="44"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.51764705882352935" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InC-nK-N93">
+                                <rect key="frame" x="247" y="639" width="142" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="GiveUp"/>
+                                <connections>
+                                    <action selector="giveUp:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="f4h-LY-Qaz"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwK-tG-UMS">
+                                <rect key="frame" x="10" y="639" width="182" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NewGame"/>
+                                <connections>
+                                    <action selector="newGame:" destination="Z2V-vh-Xhl" eventType="touchUpInside" id="81S-Gl-ZmZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rw2-I0-PB0">
+                                <rect key="frame" x="323" y="77" width="79" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="44"/>
+                                <color key="textColor" red="0.66482585670000005" green="0.51938462259999996" blue="0.3216959834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="6" height="0.0"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Time" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-Bf-R7s">
+                                <rect key="frame" x="230" y="75" width="86" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aOu-Xg-Y7e"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="giveUpButton" destination="InC-nK-N93" id="zzd-Uz-tSo"/>
+                        <outlet property="newGameButton" destination="bwK-tG-UMS" id="yvf-r4-aaT"/>
+                        <outlet property="scoreLabel" destination="ysQ-B7-Jbd" id="VdX-0P-BWz"/>
+                        <outlet property="startButton" destination="DMn-ZQ-pQV" id="pYN-cP-OCy"/>
+                        <outlet property="timeLabel" destination="rw2-I0-PB0" id="Dtj-3g-odM"/>
+                        <outletCollection property="positions" destination="v9i-E7-9q0" collectionClass="NSMutableArray" id="KbP-lf-Kic"/>
+                        <outletCollection property="positions" destination="2r6-a8-BSM" collectionClass="NSMutableArray" id="3lD-Ne-bx4"/>
+                        <outletCollection property="positions" destination="2ry-hR-pXA" collectionClass="NSMutableArray" id="IQZ-6P-C21"/>
+                        <outletCollection property="positions" destination="cK8-uL-JJt" collectionClass="NSMutableArray" id="o5x-Dv-dI1"/>
+                        <outletCollection property="positions" destination="Dw5-ad-K3a" collectionClass="NSMutableArray" id="Xu4-U8-tSx"/>
+                        <outletCollection property="positions" destination="VAb-jw-Zhb" collectionClass="NSMutableArray" id="hCc-1G-hkB"/>
+                        <outletCollection property="positions" destination="P0U-31-RZn" collectionClass="NSMutableArray" id="tDG-kE-K1Z"/>
+                        <outletCollection property="positions" destination="hvy-eQ-FHH" collectionClass="NSMutableArray" id="0fG-2E-dfB"/>
+                        <outletCollection property="positions" destination="G8I-Kh-Xcb" collectionClass="NSMutableArray" id="TlT-zU-gfe"/>
+                        <outletCollection property="positions" destination="ctF-7k-yUw" collectionClass="NSMutableArray" id="Fd1-u0-9OL"/>
+                        <outletCollection property="positions" destination="I3B-FU-eSr" collectionClass="NSMutableArray" id="mBw-pk-ASp"/>
+                        <outletCollection property="positions" destination="zuC-0R-sh7" collectionClass="NSMutableArray" id="HRh-Il-i0N"/>
+                        <outletCollection property="positions" destination="gRA-C5-Thk" collectionClass="NSMutableArray" id="PLt-b9-XJR"/>
+                        <outletCollection property="positions" destination="GjV-er-ZeQ" collectionClass="NSMutableArray" id="gdv-AY-sgi"/>
+                        <outletCollection property="positions" destination="ogG-QI-pLh" collectionClass="NSMutableArray" id="QUc-ct-xON"/>
+                        <outletCollection property="positions" destination="PI8-Ea-etD" collectionClass="NSMutableArray" id="dxz-As-Xv0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1J-S0-byv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rX8-89-EhJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3176.811594202899" y="134.5108695652174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dZV-Dt-eE6">
+            <objects>
+                <viewController id="zxH-xV-6Hc" customClass="ViewController" customModule="Adatia_Shayn_MatchingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sM-2B-MhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rulesBackground" translatesAutoresizingMaskIntoConstraints="NO" id="09H-9R-7eS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pvt-2U-7tn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szT-Bf-V8u">
+                                        <rect key="frame" x="28" y="15" width="40" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.94117647059999998" green="0.90196078430000004" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="QSO-kP-n1X" kind="unwind" unwindAction="unwindToMainMenu:" id="dGT-Fc-91C"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Golden Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-vu-ftF">
+                                        <rect key="frame" x="8" y="17" width="26" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23737251758575439" green="0.050801649689674377" blue="0.066631071269512177" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-2T-nml">
+                                <rect key="frame" x="36" y="84" width="342" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.36317121478873238" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The goal of this game is to find two pictures of various avengers and match them. You begin by earning one point per match, however if you match pairs one after another, the amount of points you earn will increase exponentially. In singleplayer, players are not restricted by time and can take as long as they want to match all of the avengers. In multiplayer, two players play against one another and whichever player has a higher score at the end wins. In time trial, players attempt to match all of the avengers before the timer runs out.</string>
+                                <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerNormal" family="Avengeance Heroic Avenger" pointSize="30"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.51764705882352935" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ghV-At-1ec"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jx-WQ-xza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QSO-kP-n1X" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3947.826086956522" y="134.5108695652174"/>
+        </scene>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="Mrp-Ag-s1W">
+            <objects>
+                <viewController id="4GP-rB-mgK" customClass="LeaderboardViewController" customModule="Adatia_Shayn_MatchingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LET-gP-Y0l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-yk-rTL">
+                                <rect key="frame" x="0.0" y="109" width="414" height="627"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myReusedCell" textLabel="vb4-7T-9Q0" style="IBUITableViewCellStyleDefault" id="Hj9-fn-q7G">
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hj9-fn-q7G" id="LVJ-k7-Drh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vb4-7T-9Q0">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4GP-rB-mgK" id="0eU-xf-Uxq"/>
+                                    <outlet property="delegate" destination="4GP-rB-mgK" id="10r-dC-3Dx"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XtA-3H-K3Z">
+                                <rect key="frame" x="20" y="72" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Singleplayer"/>
+                                    <segment title="Time Trial"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="4GP-rB-mgK" eventType="valueChanged" id="hAB-no-ICH"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JgE-Wb-xMI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVz-PX-Nl6">
+                                        <rect key="frame" x="28" y="15" width="40" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.94117647059999998" green="0.90196078430000004" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ayW-1t-dz6" kind="unwind" unwindAction="unwindToMainMenu:" id="8SJ-ZU-d5B"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Golden Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="5nD-Hw-yat">
+                                        <rect key="frame" x="8" y="17" width="26" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16216167810000001" green="0.083705015480000006" blue="0.21563404799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lg8-bv-nmq"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmentPanel" destination="XtA-3H-K3Z" id="JCx-Bb-TfV"/>
+                        <outlet property="tableView" destination="DZE-yk-rTL" id="3rw-jp-XsJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2v-Dp-KPP" sceneMemberID="firstResponder"/>
+                <exit id="ayW-1t-dz6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="834.78260869565224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GiveUp" width="273" height="96"/>
+        <image name="Golden Arrow" width="295" height="295"/>
+        <image name="HowToPlay" width="661" height="85"/>
+        <image name="Leaderboard" width="721" height="85"/>
+        <image name="Multiplayer" width="507" height="105"/>
+        <image name="NewGame" width="378" height="105"/>
+        <image name="Score" width="234" height="89"/>
+        <image name="Singleplayer" width="531" height="105"/>
+        <image name="Start" width="240" height="105"/>
+        <image name="Subtitle2" width="1054" height="85"/>
+        <image name="Time" width="195" height="89"/>
+        <image name="TimeTrial" width="398" height="105"/>
+        <image name="avengerslogo" width="445" height="445"/>
+        <image name="background" width="1080" height="1920"/>
+        <image name="background2" width="1080" height="1920"/>
+        <image name="grid" width="432" height="432"/>
+        <image name="rulesBackground" width="1080" height="1920"/>
+        <image name="title" width="393" height="105"/>
+    </resources>
+</document>
